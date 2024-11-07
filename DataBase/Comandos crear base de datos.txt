@@ -1,0 +1,263 @@
+CREATE TABLE products(
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(30) NOT NULL,
+    marca VARCHAR(20) NOT NULL,
+    precio INTEGER NOT NULL,
+    cantidad VARCHAR(20) NOT NULL
+);
+
+
+INSERT INTO products (nombre, marca, precio, cantidad)
+    VALUES ('Agua manantial',
+            'Santa Maria',
+            147.89,
+            '1000 ml'
+           ),
+            ('Galletas Oreo',
+            'Nabisco',
+            13.5,
+            '114 grs'
+           ),
+            ('Donitas espolvoreadas',
+            'Bimbo',
+            27.5,
+            '140 grs'
+           ),
+            ('Gelatina Dany Limon',
+            'Danone',
+            7.8,
+            '125 grs'
+           ),
+            ('Gelatina Dany Uva',
+            'Danone',
+            7.55,
+            '125 grs'
+           ),
+            ('Jugo Naranja natural',
+            'Lala',
+            17,
+            '330 ml'
+           ),
+            ('Jugo de coco',
+            'Juslab',
+            54.90,
+            '350 ml'
+           ),
+            ('Sopa de Fideo',
+            'La moderna',
+            11.2,
+            '220 grs'
+           ),
+            ('Sopa de letras',
+            'La moderna',
+            11.2,
+            '220 grs'
+           ),
+            ('Sopa Codo No 2',
+            'Barilla',
+            13.4,
+            '200 gr'
+           ),
+            ('Chocolate en polvo',
+            'Chocomilk',
+            37,
+            '350grs'
+           ),
+            ('Fecula de Maiz',
+            'Maizena',
+            94,
+            '750 grs'
+           ),
+            ('Chocolate de mesa',
+            'Abuelita',
+            119,
+            '630 grs'
+           ),
+            ('Tamal de elote',
+            'La Costeña',
+            15.2,
+            '110 grs'
+           ),
+            ('Salsa casera',
+            'Herdez',
+            13.90,
+            '210grs'
+           ),
+            ('Esquites',
+            'La Costeña',
+            33.6,
+            '400 grs'
+           ),
+            ('Salsa Ranchera',
+            'La Costeña',
+            26.5,
+            '250 grs'
+           ),
+            ('Panque con pasas',
+            'Bimbo',
+            39.5,
+            '280 grs'
+           ),
+            ('Galletas Marias',
+            'La Moderna',
+            13.9,
+            '140 grs'
+           ),
+            ('Pan Dulce Madalena',
+            'Bimbo',
+            25.5,
+            '93 grs'
+           ),
+            ('Barras de cereal Fresa',
+            'Quaker',
+            44,
+            '150 grs'
+           ),
+            ('Nectar Mango',
+            'Del valle',
+            24,
+            '1 lt'
+           ),
+            ('Nectar de Manzana',
+            'Del Valle',
+            30,
+            '1 lt'
+           ),
+            ('Bebida Sabor Sandia',
+            'Arizona',
+            15,
+            '460 ml'
+           ),
+            ('Sopa Instantanea Fiedo',
+            'Knorr',
+            18.5,
+            '82 grs'
+           ),
+            ('Arroz Instantaneo',
+            'Knorr',
+            27,
+            '160 grs'
+           ),
+            ('Atole de fresa',
+            'Pronto',
+            8.9,
+            '47 grs'
+           ),
+            ('Vainilla en polvo Nesquik',
+            'Nestle',
+            54,
+            '357 grs'
+           ),
+            ('Chocolate en polvo',
+            'Cal c Tose',
+            59,
+            '400 grs'
+           ),
+            ('Atole Vainilla',
+            'Pronto',
+            8.9,
+            '47 GRS'
+           ),
+            ('Galletas Canelitas',
+            'Marinela',
+            38,
+            '300 grs'
+           ),
+            ('Galletas Chokis',
+            'Gamesa',
+            59,
+            '399 grs'
+           ),
+            ('Galletas Mamut',
+            'Gamesa',
+            46,
+            '240 grs'
+           ),
+            ('Galletas Saladas',
+            'Ritz',
+            65,
+            '534 grs'
+           ),
+            ('Aceitunas con Hueso',
+            'Bufalo',
+            46,
+            '240'
+           ),
+            ('Aceitunas sin hueso',
+            'Bufalo',
+            40.5,
+            '300 grs'
+           ),
+            ('Papas fritas Adobadas',
+            'Sabritas',
+            56,
+            '160 grs'
+           ),
+            ('Papas fritas Queso Ruffles',
+            'Sabritas',
+            55,
+            '185 grs'
+           ),
+            ('Frituras Rancheritos',
+            'Sabritas',
+            48,
+            '225 grs'
+           ),
+            ('Papas Takis',
+            'Barcel',
+            52,
+            '240 grs'
+           ),
+            ('Frituras Sal limon',
+            'Sabritas',
+            38,
+            'Sabritas'
+           ),
+            ('Frituras Doritos',
+            'Sabritas',
+            22,
+            '76 grs'
+           ),
+            ('Frituras Poffs',
+            'Sabritas',
+            43.3,
+            '160 grs'
+           ),
+            ('Papas Flaming Hot',
+            'Sabritas',
+            59.9,
+            '160'
+           ),
+            ('Papas original',
+            'Pringles',
+            39,
+            '124 grs'
+           ),
+            ('Nectar de Durazno',
+            'Del Valle',
+            7,
+            '200 ml'
+           ),
+            ('Lentejas',
+            'Valle',
+            30.5,
+            '500 grs'
+           ),
+            ('Harina de trigo',
+            'Selecta',
+            18,
+            '1 kg'
+           ),
+            ('Arroz Precocido',
+            'Valle',
+            40.5,
+            '750 grs'
+           ),
+            ('Frijoles refritos',
+            'Isadora',
+            19.5,
+            '400 grs'
+           )
+
+
+select * from products;
