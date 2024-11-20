@@ -104,25 +104,17 @@ CREATE TABLE usuario (
     horario VARCHAR(50) NOT NULL
 );
 
-INSERT INTO usuario (nombre, puesto, correo, telefono, horario)
-VALUES
-    ('María López', 'Vendedor', 'maria.lopez@empresa.com', '5541234567', '10:00 - 19:00'),
-    ('Juan Pérez', 'Vendedor', 'juan.perez@empresa.com', '5539876543', '10:00 - 19:00'),
-    ('Ana Martínez', 'Vendedor', 'ana.martinez@empresa.com', '5527654321', '10:00 - 19:00'),
-    ('Luis Gómez', 'Vendedor', 'luis.gomez@empresa.com', '5512345678', '10:00 - 19:00'),
-    ('Carla Sánchez', 'Vendedor', 'carla.sanchez@empresa.com', '5567890123', '10:00 - 19:00'),
-    ('Roberto Díaz', 'Vendedor', 'roberto.diaz@empresa.com', '5598765432', '10:00 - 19:00'),
-    ('Lucía Torres', 'Vendedor', 'lucia.torres@empresa.com', '5545678901', '10:00 - 19:00'),
-    ('Miguel Hernández', 'Vendedor', 'miguel.hernandez@empresa.com', '5532109876', '10:00 - 19:00'),
-    ('Laura García', 'Vendedor', 'laura.garcia@empresa.com', '5543216789', '10:00 - 19:00'),
-    ('Pedro Morales', 'Vendedor', 'pedro.morales@empresa.com', '5523456789', '10:00 - 19:00'),
-    ('Sofía Ramírez', 'Auxiliar de venta', 'sofia.ramirez@empresa.com', '5529876543', '09:00 - 18:00'),
-    ('Fernando Aguilar', 'Auxiliar de venta', 'fernando.aguilar@empresa.com', '5556789012', '09:00 - 18:00'),
-    ('Andrea Flores', 'Auxiliar de venta', 'andrea.flores@empresa.com', '5587654321', '09:00 - 18:00'),
-    ('Ricardo Mendoza', 'Auxiliar de venta', 'ricardo.mendoza@empresa.com', '5512345678', '09:00 - 18:00'),
-    ('Daniela Ortiz', 'Auxiliar de venta', 'daniela.ortiz@empresa.com', '5598765432', '09:00 - 18:00'),
-    ('Jorge Herrera', 'Gerente', 'jorge.herrera@empresa.com', '5545678901', '08:00 - 17:00');
-
+INSERT INTO Usuario (Nombre, Apellido, Puesto, Correo, Telefono) VALUES
+('Alma', 'González Escamilla', 'Gerente', 'alma.gonzalez@example.com', '5551234567'),
+('Gael', 'Rosas Serratos', 'Vendedor', 'gael.rosas@example.com', '5552345678'),
+('Alonso', 'Gutiérrez Varela', 'Administrador', 'alonso.gutierrez@example.com', '5553456789'),
+('Martín', 'Luna Rogel', 'Supervisor', 'martin.luna@example.com', '5554567890'),
+('Miguel Ángel', 'Balderas Balderas', 'Asesor', 'miguel.balderas@example.com', '5555678901'),
+('Emmanuel', 'Moscoso Aquino', 'Contador', 'emmanuel.moscoso@example.com', '5556789012'),
+('Edwin Antonio', 'Quintero Velázquez', 'Auditor', 'edwin.quintero@example.com', '5557890123'),
+('Osvaldo', 'Domínguez Moreno', 'Analista', 'osvaldo.dominguez@example.com', '5558901234'),
+('Rubén', 'Zurita', 'Encargado', 'ruben.zurita@example.com', '5559012345'),
+('Fernando', 'Belman', 'Recepcionista', 'fernando.belman@example.com', '5550123456');
 
 
 
@@ -134,20 +126,58 @@ CREATE TABLE venta (
     metodo_pago VARCHAR(20) NOT NULL
 );
 
-INSERT INTO venta (fecha, total, metodo_pago)
-VALUES
-    ('2024-11-01', 295.78, 'Efectivo'),
-    ('2024-11-02', 27.50, 'Tarjeta'),
-    ('2024-11-03', 68.00, 'Efectivo'),
-    ('2024-11-04', 40.50, 'Tarjeta'),
-    ('2024-11-05', 39.00, 'Efectivo'),
-    ('2024-11-06', 109.80, 'Tarjeta'),
-    ('2024-11-07', 11.20, 'Efectivo'),
-    ('2024-11-08', 33.60, 'Tarjeta'),
-    ('2024-11-09', 37.00, 'Efectivo'),
-    ('2024-11-10', 188.00, 'Tarjeta');
+INSERT INTO Venta (Id_usuario, Fecha, Total, Metodo_pago) VALUES
 
-
+(1, '2024-11-01', 35.00, 'Efectivo'),
+(2, '2024-11-01', 45.50, 'Tarjeta'),
+(3, '2024-11-01', 20.75, 'Transferencia'),
+(4, '2024-11-01', 150.00, 'Efectivo'),
+(5, '2024-11-01', 50.25, 'Tarjeta'),
+(6, '2024-11-01', 10.00, 'Transferencia'),
+(7, '2024-11-02', 25.00, 'Efectivo'),
+(8, '2024-11-02', 80.00, 'Tarjeta'),
+(9, '2024-11-02', 20.50, 'Transferencia'),
+(10, '2024-11-12', 20.00, 'Efectivo'),
+(11, '2024-11-12', 30.00, 'Tarjeta'),
+(12, '2024-11-12', 180.75, 'Efectivo'),
+(13, '2024-11-12', 44.00, 'Transferencia'),
+(14, '2024-11-12', 27.00, 'Tarjeta'),
+(15, '2024-11-12', 39.50, 'Efectivo'),
+(16, '2024-11-12', 87.00, 'Tarjeta'),
+(17, '2024-11-12', 15.25, 'Efectivo'),
+(18, '2024-11-12', 24.00, 'Transferencia'),
+(19, '2024-11-13', 310.00, 'Efectivo'),
+(20, '2024-11-23', 58.00, 'Tarjeta'),
+(21, '2024-11-23', 40.75, 'Efectivo'),
+(22, '2024-11-23', 25.00, 'Transferencia'),
+(23, '2024-11-23', 22.00, 'Tarjeta'),
+(24, '2024-11-23', 60.00, 'Efectivo'),
+(25, '2024-11-23', 38.25, 'Transferencia'),
+(26, '2024-11-23', 40.50, 'Tarjeta'),
+(27, '2024-11-23', 87.75, 'Efectivo'),
+(28, '2024-11-23', 36.00, 'Transferencia'),
+(29, '2024-11-23', 29.00, 'Efectivo'),
+(30, '2024-11-24', 41.50, 'Tarjeta'),
+(31, '2024-12-24', 54.75, 'Efectivo'),
+(32, '2024-12-24', 34.00, 'Transferencia'),
+(33, '2024-12-24', 23.25, 'Tarjeta'),
+(34, '2024-12-24', 48.00, 'Efectivo'),
+(35, '2024-12-24', 31.50, 'Transferencia'),
+(36, '2024-12-26', 45.75, 'Efectivo'),
+(37, '2024-12-27', 39.00, 'Transferencia'),
+(38, '2024-12-28', 27.00, 'Tarjeta'),
+(39, '2024-12-28', 35.00, 'Efectivo'),
+(40, '2024-12-28', 420.50, 'Transferencia'),
+(41, '2024-12-28', 28.75, 'Tarjeta'),
+(42, '2024-12-28', 3.00, 'Efectivo'),
+(43, '2024-12-28', 37.00, 'Transferencia'),
+(44, '2024-12-28', 45.50, 'Tarjeta'),
+(45, '2024-12-29', 29.75, 'Efectivo'),
+(46, '2024-12-29', 32.00, 'Transferencia'),
+(47, '2024-12-29', 41.00, 'Efectivo'),
+(48, '2024-12-29', 57.00, 'Tarjeta');
+(49, '2024-12-29', 8.00, 'Efectivo'),
+(50, '2024-12-29', 480.00, 'Efectivo'),
 
 
 CREATE TABLE ubicacion (
