@@ -1,3 +1,5 @@
+		Tabla productos
+
 CREATE TABLE products(
     id SERIAL PRIMARY KEY,
     nombre VARCHAR(30) NOT NULL,
@@ -7,257 +9,163 @@ CREATE TABLE products(
 );
 
 
-INSERT INTO products (nombre, marca, precio, cantidad)
-    VALUES ('Agua manantial',
-            'Santa Maria',
-            147.89,
-            '1000 ml'
-           ),
-            ('Galletas Oreo',
-            'Nabisco',
-            13.5,
-            '114 grs'
-           ),
-            ('Donitas espolvoreadas',
-            'Bimbo',
-            27.5,
-            '140 grs'
-           ),
-            ('Gelatina Dany Limon',
-            'Danone',
-            7.8,
-            '125 grs'
-           ),
-            ('Gelatina Dany Uva',
-            'Danone',
-            7.55,
-            '125 grs'
-           ),
-            ('Jugo Naranja natural',
-            'Lala',
-            17,
-            '330 ml'
-           ),
-            ('Jugo de coco',
-            'Juslab',
-            54.90,
-            '350 ml'
-           ),
-            ('Sopa de Fideo',
-            'La moderna',
-            11.2,
-            '220 grs'
-           ),
-            ('Sopa de letras',
-            'La moderna',
-            11.2,
-            '220 grs'
-           ),
-            ('Sopa Codo No 2',
-            'Barilla',
-            13.4,
-            '200 gr'
-           ),
-            ('Chocolate en polvo',
-            'Chocomilk',
-            37,
-            '350grs'
-           ),
-            ('Fecula de Maiz',
-            'Maizena',
-            94,
-            '750 grs'
-           ),
-            ('Chocolate de mesa',
-            'Abuelita',
-            119,
-            '630 grs'
-           ),
-            ('Tamal de elote',
-            'La Costeña',
-            15.2,
-            '110 grs'
-           ),
-            ('Salsa casera',
-            'Herdez',
-            13.90,
-            '210grs'
-           ),
-            ('Esquites',
-            'La Costeña',
-            33.6,
-            '400 grs'
-           ),
-            ('Salsa Ranchera',
-            'La Costeña',
-            26.5,
-            '250 grs'
-           ),
-            ('Panque con pasas',
-            'Bimbo',
-            39.5,
-            '280 grs'
-           ),
-            ('Galletas Marias',
-            'La Moderna',
-            13.9,
-            '140 grs'
-           ),
-            ('Pan Dulce Madalena',
-            'Bimbo',
-            25.5,
-            '93 grs'
-           ),
-            ('Barras de cereal Fresa',
-            'Quaker',
-            44,
-            '150 grs'
-           ),
-            ('Nectar Mango',
-            'Del valle',
-            24,
-            '1 lt'
-           ),
-            ('Nectar de Manzana',
-            'Del Valle',
-            30,
-            '1 lt'
-           ),
-            ('Bebida Sabor Sandia',
-            'Arizona',
-            15,
-            '460 ml'
-           ),
-            ('Sopa Instantanea Fiedo',
-            'Knorr',
-            18.5,
-            '82 grs'
-           ),
-            ('Arroz Instantaneo',
-            'Knorr',
-            27,
-            '160 grs'
-           ),
-            ('Atole de fresa',
-            'Pronto',
-            8.9,
-            '47 grs'
-           ),
-            ('Vainilla en polvo Nesquik',
-            'Nestle',
-            54,
-            '357 grs'
-           ),
-            ('Chocolate en polvo',
-            'Cal c Tose',
-            59,
-            '400 grs'
-           ),
-            ('Atole Vainilla',
-            'Pronto',
-            8.9,
-            '47 GRS'
-           ),
-            ('Galletas Canelitas',
-            'Marinela',
-            38,
-            '300 grs'
-           ),
-            ('Galletas Chokis',
-            'Gamesa',
-            59,
-            '399 grs'
-           ),
-            ('Galletas Mamut',
-            'Gamesa',
-            46,
-            '240 grs'
-           ),
-            ('Galletas Saladas',
-            'Ritz',
-            65,
-            '534 grs'
-           ),
-            ('Aceitunas con Hueso',
-            'Bufalo',
-            46,
-            '240'
-           ),
-            ('Aceitunas sin hueso',
-            'Bufalo',
-            40.5,
-            '300 grs'
-           ),
-            ('Papas fritas Adobadas',
-            'Sabritas',
-            56,
-            '160 grs'
-           ),
-            ('Papas fritas Queso Ruffles',
-            'Sabritas',
-            55,
-            '185 grs'
-           ),
-            ('Frituras Rancheritos',
-            'Sabritas',
-            48,
-            '225 grs'
-           ),
-            ('Papas Takis',
-            'Barcel',
-            52,
-            '240 grs'
-           ),
-            ('Frituras Sal limon',
-            'Sabritas',
-            38,
-            'Sabritas'
-           ),
-            ('Frituras Doritos',
-            'Sabritas',
-            22,
-            '76 grs'
-           ),
-            ('Frituras Poffs',
-            'Sabritas',
-            43.3,
-            '160 grs'
-           ),
-            ('Papas Flaming Hot',
-            'Sabritas',
-            59.9,
-            '160'
-           ),
-            ('Papas original',
-            'Pringles',
-            39,
-            '124 grs'
-           ),
-            ('Nectar de Durazno',
-            'Del Valle',
-            7,
-            '200 ml'
-           ),
-            ('Lentejas',
-            'Valle',
-            30.5,
-            '500 grs'
-           ),
-            ('Harina de trigo',
-            'Selecta',
-            18,
-            '1 kg'
-           ),
-            ('Arroz Precocido',
-            'Valle',
-            40.5,
-            '750 grs'
-           ),
-            ('Frijoles refritos',
-            'Isadora',
-            19.5,
-            '400 grs'
-           )
+INSERT INTO Producto (Nombre_producto, Descripcion, Precio, Cantidad, Categoria)  
+VALUES
+    ('Agua manantial', 'Agua purificada embotellada de manantial', 147.89, '1000 ml', 'Bebidas'),
+    ('Galletas Oreo', 'Galletas de chocolate con relleno de crema', 13.5, '114 grs', 'Snacks'),
+    ('Donitas espolvoreadas', 'Donas de pan cubiertas con azúcar', 27.5, '140 grs', 'Panadería'),
+    ('Gelatina Dany Limón', 'Gelatina de limón lista para consumir', 7.8, '125 grs', 'Postres'),
+    ('Gelatina Dany Uva', 'Gelatina de uva lista para consumir', 7.55, '125 grs', 'Postres'),
+    ('Jugo Naranja Natural', 'Jugo natural de naranja sin conservadores', 17, '330 ml', 'Bebidas'),
+    ('Jugo de Coco', 'Bebida a base de jugo natural de coco', 54.90, '350 ml', 'Bebidas'),
+    ('Sopa de Fideo', 'Sopa de pasta tipo fideo lista para cocinar', 11.2, '220 grs', 'Alimentos'),
+    ('Sopa de Letras', 'Sopa de pasta con forma de letras lista para cocinar', 11.2, '220 grs', 'Alimentos'),
+    ('Sopa Codo No 2', 'Pasta corta ideal para sopas o ensaladas', 13.4, '200 gr', 'Alimentos'),
+    ('Chocolate en Polvo', 'Mezcla en polvo para preparar bebida chocolatada', 37, '350 grs', 'Bebidas'),
+    ('Fécula de Maíz', 'Espesante natural para postres y salsas', 94, '750 grs', 'Alimentos'),
+    ('Chocolate de Mesa', 'Chocolate en tabletas para preparar bebidas calientes', 119, '630 grs', 'Bebidas'),
+    ('Tamal de Elote', 'Tamal dulce elaborado a base de maíz y elote', 15.2, '110 grs', 'Comida preparada'),
+    ('Salsa Casera', 'Salsa de tomate con un toque casero', 13.90, '210 grs', 'Salsas'),
+    ('Esquites', 'Granos de elote preparados con un toque tradicional', 33.6, '400 grs', 'Comida preparada'),
+    ('Salsa Ranchera', 'Salsa con mezcla de chiles y especias', 26.5, '250 grs', 'Salsas'),
+    ('Panqué con Pasas', 'Panqué suave con pasas', 39.5, '280 grs', 'Panadería'),
+    ('Galletas Marías', 'Galletas ligeras y tradicionales', 13.9, '140 grs', 'Snacks'),
+    ('Pan Dulce Magdalena', 'Pan dulce tipo magdalena', 25.5, '93 grs', 'Panadería'),
+    ('Barras de Cereal Fresa', 'Barras de cereal con sabor a fresa', 44, '150 grs', 'Snacks'),
+    ('Néctar de Mango', 'Bebida de fruta con sabor a mango', 24, '1 lt', 'Bebidas'),
+    ('Néctar de Manzana', 'Bebida de fruta con sabor a manzana', 30, '1 lt', 'Bebidas'),
+    ('Bebida Sabor Sandía', 'Bebida refrescante sabor sandía', 15, '460 ml', 'Bebidas'),
+    ('Sopa Instantánea Fideo', 'Sopa instantánea lista en minutos', 18.5, '82 grs', 'Alimentos'),
+    ('Arroz Instantáneo', 'Arroz preparado instantáneamente', 27, '160 grs', 'Alimentos'),
+    ('Atole de Fresa', 'Mezcla para preparar atole sabor fresa', 8.9, '47 grs', 'Bebidas'),
+    ('Vainilla en Polvo Nesquik', 'Mezcla en polvo para bebida sabor vainilla', 54, '357 grs', 'Bebidas');
+('Chocolate en polvo', 'Mezcla en polvo para preparar bebida chocolatada', 59, '400 grs', 'Bebidas'),
+    ('Atole Vainilla', 'Mezcla en polvo para preparar atole sabor vainilla', 8.9, '47 grs', 'Bebidas'),
+    ('Galletas Canelitas', 'Galletas dulces con sabor a canela', 38, '300 grs', 'Snacks'),
+    ('Galletas Chokis', 'Galletas con chispas de chocolate', 59, '399 grs', 'Snacks'),
+    ('Galletas Mamut', 'Galletas con relleno y cubierta de chocolate', 46, '240 grs', 'Snacks'),
+    ('Galletas Saladas', 'Galletas saladas ideales para botanas', 65, '534 grs', 'Snacks'),
+    ('Aceitunas con Hueso', 'Aceitunas verdes con hueso en salmuera', 46, '240 grs', 'Alimentos'),
+    ('Aceitunas sin hueso', 'Aceitunas verdes sin hueso en salmuera', 40.5, '300 grs', 'Alimentos'),
+    ('Papas fritas Adobadas', 'Papas fritas con sabor adobado', 56, '160 grs', 'Snacks'),
+    ('Papas fritas Queso Ruffles', 'Papas fritas con sabor a queso', 55, '185 grs', 'Snacks'),
+    ('Frituras Rancheritos', 'Frituras de maíz con sabor a chile y limón', 48, '225 grs', 'Snacks'),
+    ('Papas Takis', 'Botana de maíz con sabor intenso', 52, '240 grs', 'Snacks'),
+    ('Frituras Sal limón', 'Frituras de maíz con sabor a sal y limón', 38, '160 grs', 'Snacks'),
+    ('Frituras Doritos', 'Botana de maíz triangular con sabor a queso', 22, '76 grs', 'Snacks'),
+    ('Frituras Poffs', 'Frituras infladas de maíz con sabor a queso', 43.3, '160 grs', 'Snacks'),
+    ('Papas Flaming Hot', 'Papas fritas con un toque extra picante', 59.9, '160 grs', 'Snacks'),
+    ('Papas original', 'Papas fritas sabor original en tubo', 39, '124 grs', 'Snacks'),
+    ('Néctar de Durazno', 'Bebida de fruta con sabor a durazno', 7, '200 ml', 'Bebidas'),
+    ('Lentejas', 'Legumbre rica en nutrientes lista para cocinar', 30.5, '500 grs', 'Alimentos'),
+    ('Harina de trigo', 'Harina de trigo ideal para repostería y cocina', 18, '1 kg', 'Alimentos'),
+    ('Arroz Precocido', 'Arroz precocido listo para servir en minutos', 40.5, '750 grs', 'Alimentos'),
+    ('Frijoles refritos', 'Frijoles refritos en empaque listos para consumir', 19.5, '400 grs', 'Alimentos')
 
 
 select * from products;
+
+CREATE TABLE proveedor (
+    id_proveedor SERIAL PRIMARY KEY,
+    empresa VARCHAR(50) NOT NULL,
+    telefono VARCHAR(15) NOT NULL,
+    correo VARCHAR(50) NOT NULL,
+    direccion TEXT NOT NULL
+);
+
+INSERT INTO proveedor (empresa, telefono, correo, direccion)
+VALUES
+    ('Santa Maria', '5551234567', 'contacto@santamaria.com', 'Calle Manantiales 123, Ciudad de México'),
+    ('Nabisco', '5559876543', 'ventas@nabisco.com', 'Av. Insurgentes 45, Monterrey'),
+    ('Bimbo', '5587654321', 'servicio@bimbo.com', 'Circuito Panaderos 67, Guadalajara'),
+    ('Danone', '5567890123', 'info@danone.com', 'Blvd. Reforma 89, Puebla'),
+    ('Lala', '5532109876', 'contacto@lala.com', 'Calle Constituyentes 101, Querétaro'),
+    ('Juslab', '5543216789', 'ventas@juslab.com', 'Av. Juárez 202, Mérida'),
+    ('Knorr', '5556789012', 'soporte@knorr.com', 'Paseo de los Héroes 303, León'),
+    ('La Moderna', '5578901234', 'ventas@lamoderna.com', 'Calle Hidalgo 404, Tijuana'),
+    ('Nestlé', '5534567890', 'contacto@nestle.com', 'Av. Chapultepec 505, Cancún'),
+    ('Herdez', '5523456789', 'info@herdez.com', 'Blvd. Universidad 606, Oaxaca'),
+    ('Gamesa', '5589012345', 'soporte@gamesa.com', 'Circuito Revolución 707, San Luis Potosí'),
+    ('Quaker', '5576543210', 'ventas@quaker.com', 'Calle Independencia 808, Morelia'),
+    ('Sabritas', '5545678901', 'info@sabritas.com', 'Av. Lázaro Cárdenas 909, Aguascalientes'),
+    ('Barcel', '5554321098', 'servicio@barcel.com', 'Blvd. Benito Juárez 1010, Veracruz'),
+    ('Bufalo', '5521234567', 'contacto@bufalo.com', 'Circuito Morelos 1111, Hermosillo');
+
+    
+
+
+
+CREATE TABLE usuario (
+    id_usuario SERIAL PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    puesto VARCHAR(50) NOT NULL,
+    correo VARCHAR(50) NOT NULL,
+    telefono VARCHAR(15) NOT NULL,
+    horario VARCHAR(50) NOT NULL
+);
+
+INSERT INTO usuario (nombre, puesto, correo, telefono, horario)
+VALUES
+    ('María López', 'Vendedor', 'maria.lopez@empresa.com', '5541234567', '10:00 - 19:00'),
+    ('Juan Pérez', 'Vendedor', 'juan.perez@empresa.com', '5539876543', '10:00 - 19:00'),
+    ('Ana Martínez', 'Vendedor', 'ana.martinez@empresa.com', '5527654321', '10:00 - 19:00'),
+    ('Luis Gómez', 'Vendedor', 'luis.gomez@empresa.com', '5512345678', '10:00 - 19:00'),
+    ('Carla Sánchez', 'Vendedor', 'carla.sanchez@empresa.com', '5567890123', '10:00 - 19:00'),
+    ('Roberto Díaz', 'Vendedor', 'roberto.diaz@empresa.com', '5598765432', '10:00 - 19:00'),
+    ('Lucía Torres', 'Vendedor', 'lucia.torres@empresa.com', '5545678901', '10:00 - 19:00'),
+    ('Miguel Hernández', 'Vendedor', 'miguel.hernandez@empresa.com', '5532109876', '10:00 - 19:00'),
+    ('Laura García', 'Vendedor', 'laura.garcia@empresa.com', '5543216789', '10:00 - 19:00'),
+    ('Pedro Morales', 'Vendedor', 'pedro.morales@empresa.com', '5523456789', '10:00 - 19:00'),
+    ('Sofía Ramírez', 'Auxiliar de venta', 'sofia.ramirez@empresa.com', '5529876543', '09:00 - 18:00'),
+    ('Fernando Aguilar', 'Auxiliar de venta', 'fernando.aguilar@empresa.com', '5556789012', '09:00 - 18:00'),
+    ('Andrea Flores', 'Auxiliar de venta', 'andrea.flores@empresa.com', '5587654321', '09:00 - 18:00'),
+    ('Ricardo Mendoza', 'Auxiliar de venta', 'ricardo.mendoza@empresa.com', '5512345678', '09:00 - 18:00'),
+    ('Daniela Ortiz', 'Auxiliar de venta', 'daniela.ortiz@empresa.com', '5598765432', '09:00 - 18:00'),
+    ('Jorge Herrera', 'Gerente', 'jorge.herrera@empresa.com', '5545678901', '08:00 - 17:00');
+
+
+
+
+
+CREATE TABLE venta (
+    id_venta SERIAL PRIMARY KEY,
+    fecha DATE NOT NULL,
+    total NUMERIC(10, 2) NOT NULL,
+    metodo_pago VARCHAR(20) NOT NULL
+);
+
+INSERT INTO venta (fecha, total, metodo_pago)
+VALUES
+    ('2024-11-01', 295.78, 'Efectivo'),
+    ('2024-11-02', 27.50, 'Tarjeta'),
+    ('2024-11-03', 68.00, 'Efectivo'),
+    ('2024-11-04', 40.50, 'Tarjeta'),
+    ('2024-11-05', 39.00, 'Efectivo'),
+    ('2024-11-06', 109.80, 'Tarjeta'),
+    ('2024-11-07', 11.20, 'Efectivo'),
+    ('2024-11-08', 33.60, 'Tarjeta'),
+    ('2024-11-09', 37.00, 'Efectivo'),
+    ('2024-11-10', 188.00, 'Tarjeta');
+
+
+
+
+CREATE TABLE ubicacion (
+    id_ubicacion SERIAL PRIMARY KEY,
+    direccion TEXT NOT NULL,
+    telefono VARCHAR(15) NOT NULL
+);
+
+INSERT INTO ubicacion (direccion, telefono)
+VALUES
+    ('Av. Juárez 123, Col. Centro, Ciudad de México', '5541234567'),
+    ('Calle Hidalgo 456, Col. Industrial, Monterrey', '5539876543'),
+    ('Blvd. Revolución 789, Col. Miravalle, Guadalajara', '5587654321'),
+    ('Calle Morelos 101, Col. Reforma, Puebla', '5567890123'),
+    ('Av. Independencia 202, Col. Jardines, Querétaro', '5532109876'),
+    ('Calle Insurgentes 303, Col. Centro, San Luis Potosí', '5543216789'),
+    ('Blvd. Universidad 404, Col. Universitaria, León', '5527654321'),
+    ('Calle Lázaro Cárdenas 505, Col. Centro, Mérida', '5598765432'),
+    ('Av. Benito Juárez 606, Col. Campestre, Hermosillo', '5545678901'),
+    ('Blvd. Costero 707, Col. Playas, Cancún', '5589012345');
+
